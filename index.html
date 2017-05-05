@@ -27,7 +27,7 @@
     <div class="header">
 	    
       <div class="container">
-        <h1 id="IS219Gallery">{{title}}</h1>
+        <h1 id="app_title">{{title}}</h1>
       </div>	
       
     </div>
@@ -39,7 +39,7 @@
         <div class="col-md-6" ng-repeat="i in movies"> 
             <div class="thumbnail">
 
-					<img class="poster" ng-src="{{movies[$index].posters[movies[$index].posterindex]}}" />
+					<img class="poster" ng-src="{{movies[$index].posters[movies[$index].posterindex]}}" /> {{movies[$index].posters[movies[$index].posterindex]}}
 					<div class="imageInfo">{{posterindex}}</div>
 					
 					<p class="title">{{movies[$index].title}} ({{movies[$index].country}})</p> 
@@ -49,8 +49,8 @@
 					<p class="websites">Websites: <a>{{movies[$index].imdb}}</a> | <a>{{movies[$index].website}}</a></p>
 					
 		            <div class="social">
-		              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movies[$index].like}}</p>
-		              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movies[$index].dislike}}</p>
+		              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movies[$index].likes}}</p>
+		              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movies[$index].dislikes}}</p>
 		            </div>
             </div> 
         </div>
