@@ -120,7 +120,9 @@ app.controller('HomeController', ['$scope', function($scope) {
             $scope.movies[index].posterindex++;
       };
 	
-	
+	$scope.timeText = function(minutes){
+            return Math.floor(minutes/60)+"hours "+minutes%60+"minutes";
+      };    
 	
 	
 	
