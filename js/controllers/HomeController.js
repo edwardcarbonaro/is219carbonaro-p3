@@ -88,7 +88,21 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
-	}
+	},   
+    { 
+      title:      'The Big Lebowski', 
+      iscore:     8.2,
+      rating:     'R',
+      runtime:    117,
+      released:   new Date('1998', '03', '06'),
+      country:    'USA',
+      posters:    ['img/lebowski1.jpg','img/lebowski2.jpg'],
+      imdb:       'http://www.imdb.com/title/tt0118715/',
+      website:    'https://www.facebook.com/BigLebowskiMovie/',
+      likes:      987,
+      dislikes:   101,
+      posterindex: 0
+      }      
 	
 	
   ];
@@ -126,7 +140,7 @@ app.controller('HomeController', ['$scope', function($scope) {
       };
 	
 	$scope.timeText = function(minutes){
-            return Math.floor(minutes/60)+"hours "+minutes%60+"minutes";
+            return Math.floor(minutes/60)+"h "+minutes%60+"m";
       };    
 	
 	
