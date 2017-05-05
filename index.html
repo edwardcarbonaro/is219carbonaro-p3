@@ -46,11 +46,11 @@
 					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{movies[$index].iscore}} </p>
 					<p class="runtime">Runtime: {{movies[$index].runtime}}</p> 
 					<p class="released">Released: {{movies[$index].released | date}} | Rated: {{movies[$index].rating}}</p>
-					<p class="websites">Websites: <a>{{movies[$index].imdb}}</a> | <a>{{movies[$index].website}}</a></p>
+					<p class="websites">Websites: IMDB <a>{{movies[$index].imdb}}</a> | Official <a>{{movies[$index].website}}</a></p>
 					
 		            <div class="social">
-		              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movies[$index].likes}}</p>
-		              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movies[$index].dislikes}}</p>
+		              <p class="likes" ng-click="like($index)"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movies[$index].likes}}</p>
+		              <p class="dislikes" ng-click="dislike($index)"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movies[$index].dislikes}}</p>
 		            </div>
             </div> 
         </div>
