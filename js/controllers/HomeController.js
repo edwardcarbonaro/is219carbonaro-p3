@@ -102,8 +102,35 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:      987,
       dislikes:   101,
       posterindex: 0
-      }      
-	
+      },
+    { 
+      title:      'Master and Commander: The Far Side of the World', 
+      iscore:     7.4,
+      rating:     'PG-13',
+      runtime:    138,
+      released:   new Date('2003', '11', '14'),
+      country:    'USA',
+      posters:    ['img/master1.jpg','img/master2.jpg'],
+      imdb:       'http://www.imdb.com/title/tt0311113/',
+      website:    'https://en.wikipedia.org/wiki/Master_and_Commander',
+      likes:      703,
+      dislikes:   126,
+      posterindex: 0
+      },      
+    { 
+      title:      'The Lord of the Rings: The Fellowship of the Ring ', 
+      iscore:     8.8,
+      rating:     'PG-13',
+      runtime:    178,
+      released:   new Date('2001', '12', '19'),
+      country:    'USA',
+      posters:    ['img/ring1.jpg','img/ring2.jpg'],
+      imdb:       'http://www.imdb.com/title/tt0120737/',
+      website:    'http://lotr.wikia.com/wiki/Fellowship_of_the_Ring',
+      likes:      1235,
+      dislikes:   14,
+      posterindex: 0
+      }	
 	
   ];
 	
